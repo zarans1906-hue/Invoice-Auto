@@ -1,0 +1,18 @@
+{
+  "name": "converter-nota-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot (Telegraf) to convert bulk receipt text into a table summary",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "pdfkit": "^0.13.0",
+    "telegraf": "^4.16.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

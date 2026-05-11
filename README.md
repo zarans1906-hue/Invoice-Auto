@@ -1,6 +1,7 @@
 # 🧾 Converter Nota — Telegram Bot
 <img width="1142" height="685" alt="Screenshot 2026-05-11 105104" src="https://github.com/user-attachments/assets/45c07cd8-4452-484a-ace9-90a142414c74" />
-<img width="703" height="410" alt="Screenshot 2026-05-11 095639" src="https://github.com/user-attachments/assets/50eef099-b7a7-4fc5-a8a3-47384a421c15" />
+<img width="1406" height="962" alt="Screenshot 2026-05-11 105113" src="https://github.com/user-attachments/assets/00b7f07d-da5d-4715-b529-cfc2c6536317" />
+
 
 
 A lightweight Telegram bot built with **Node.js** and **Telegraf** that automatically converts bulk receipt text into a clean, organized transaction table — with PDF export support.

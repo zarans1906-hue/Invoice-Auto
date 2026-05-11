@@ -1,76 +1,74 @@
-# 🧾 Converter Nota - Telegram Bot
+# 🧾 Converter Nota — Telegram Bot
+<img width="1142" height="685" alt="Screenshot 2026-05-11 105104" src="https://github.com/user-attachments/assets/45c07cd8-4452-484a-ace9-90a142414c74" />
+<img width="703" height="410" alt="Screenshot 2026-05-11 095639" src="https://github.com/user-attachments/assets/50eef099-b7a7-4fc5-a8a3-47384a421c15" />
 
-A lightweight Telegram bot built with Node.js and Telegraf to automatically convert bulk receipt text into a clean, organized transaction table with PDF export support.
 
-Designed to simplify receipt management and speed up transaction documentation workflows.
+A lightweight Telegram bot built with **Node.js** and **Telegraf** that automatically converts bulk receipt text into a clean, organized transaction table — with PDF export support.
+
+Designed to simplify receipt management and speed up transaction documentation for daily operational workflows.
 
 ---
 
 ## ✨ Features
 
-- 🤖 Telegram-based receipt converter
-- 🧾 Automatically formats messy receipt text
-- 📊 Generates clean transaction tables
-- 📄 Export receipt as PDF
-- ⚡ Fast and lightweight processing
+- 🤖 Telegram-based receipt converter — no app install needed
+- 🧾 Automatically formats messy, unstructured receipt text
+- 📊 Generates clean transaction summary tables
+- 📄 Exports receipt as downloadable PDF
 - 🏷️ Delivery destination input support
-- 🧠 Flexible text pattern recognition
-- ✅ Ignores invalid or broken input lines automatically
-
----
-
-## 🛠️ Tech Stack
-
-- Node.js
-- Telegraf
-- dotenv
-- PDF Generator
+- 🧠 Flexible text pattern recognition (multiple input formats)
+- ✅ Automatically ignores invalid or broken input lines
+- ⚡ Fast and lightweight processing
 
 ---
 
 ## 📸 Preview
 
-Add screenshots here:
-- Telegram bot interaction
-- Generated receipt table
-- PDF result preview
+> _Add screenshots below to show how the bot works_
+
+| Telegram Interaction | Generated Table | PDF Result |
+|---|---|---|
+| _(screenshot)_ | _(screenshot)_ | _(screenshot)_ |
 
 ---
 
-# ⚙️ Installation
+## 🛠️ Tech Stack
 
-## 1️⃣ Clone Repository
+| Technology | Purpose |
+|---|---|
+| Node.js | Runtime environment |
+| Telegraf | Telegram Bot framework |
+| PDF Generator | Receipt PDF export |
+| dotenv | Secure environment config |
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/converter-nota-bot.git
+git clone https://github.com/JEK642/converter-nota-bot.git
 cd converter-nota-bot
 ```
 
----
-
-## 2️⃣ Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
----
+### 3. Configure Environment Variables
 
-## 3️⃣ Configure Environment Variables
-
-Create `.env` file and fill required values.
-
-Example:
+Create a `.env` file in the root directory:
 
 ```env
 BOT_TOKEN=your_telegram_bot_token
 ```
 
-You can also check `.env.example` for reference.
+> See `.env.example` for all available configuration options.
 
----
-
-## ▶️ Run The Bot
+### 4. Run The Bot
 
 ```bash
 npm start
@@ -78,19 +76,15 @@ npm start
 
 ---
 
-# 📖 Usage
+## 📖 Usage
 
-Before sending item data, the bot will first ask for the delivery destination.
+1. Start the bot on Telegram
+2. When prompted, reply with the **delivery destination** name
+3. Send your item list — one item per line
 
-Reply with the destination name once, then continue by sending the item list.
+### ✅ Supported Input Formats
 
----
-
-## ✅ Supported Input Formats
-
-Each line represents one item.
-
-Examples:
+The bot accepts multiple formats for flexibility:
 
 ```text
 Indomie 5 3000
@@ -99,38 +93,21 @@ Beras lpt : 1 : 15000
 ```
 
 The bot will automatically:
-- detect item name
-- calculate quantity
-- summarize totals
-- generate clean transaction table
-- provide downloadable PDF receipt
+- Detect item name, quantity, and price
+- Calculate totals
+- Generate a clean transaction table
+- Provide a downloadable PDF receipt
 
 ---
 
-# 📌 Notes
+## 📌 Notes
 
-- Invalid lines are automatically ignored
-- Tokens and configuration are loaded securely using `.env`
-- Additional configurations can be adjusted directly in the source code
-
----
-
-# 🎯 Purpose
-
-This project was created to automate receipt formatting and transaction summarization workflows using Telegram as a simple and accessible interface.
+- Invalid or unrecognized lines are automatically skipped
+- Credentials are loaded securely via `.env` — never hardcoded
+- Additional configurations can be adjusted in the source code
 
 ---
 
-# 🚀 Benefits
+## 👨‍💻 Author
 
-- Faster receipt processing
-- Cleaner transaction documentation
-- Reduces manual formatting
-- Easy to use from mobile devices
-- Suitable for operational and daily transaction workflows
-
----
-
-# 👨‍💻 Author
-
-Made with passion by JEK
+Made with passion by **JEK** — [github.com/JEK642](https://github.com/JEK642)
